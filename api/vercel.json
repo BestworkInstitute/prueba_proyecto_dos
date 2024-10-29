@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/get-link.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/get-link/(.*)",
+      "dest": "/api/get-link.js"
+    }
+  ]
+}
